@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk&display=swap");
+
+/* Default styles (Mobile First) */
+body {
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+body {
+  font-size: 22px;
+  font-family: "Inter", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+main {
+}
+.main-content {
+}
+.resume-section {
+}
+.resume-header-container {
+}
+.resume-intro {
+}
+.resume-title {
+}
+.resume-description {
+}
+.resume-buttons {
+}
+.btn-save-draft {
+}
+.btn-icon {
+}
+.btn-text {
+}
+.btn-preview {
+}
+.resume-progress {
+}
+.personal-info-section {
+}
+.personal-info-container {
+}
+.section-header {
+}
+.section-title {
+}
+.section-description {
+}
+.input-group {
+}
+.input-field {
+}
+.professional-summary-section {
+}
+.summary-header {
+}
+.summary-text {
+}
+.summary-title {
+}
+.summary-description {
+}
+.btn-ai-generate {
+}
+.next-button-container {
+}
+.btn-next {
+}
+.btn-next-span {
+}
+
+/* Tablet (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+  }
+  .header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 12px 36px;
+  }
+  .textArea {
+    width: 80%;
+    padding: 10px 44px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    height: 40px;
+    color: #f9fafb;
+    font-size: 14px;
+    outline: none;
+    border: 2px solid #f0f0f0;
+  }
+  .alert {
+    background: #f9fafb;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: red;
+  }
+  .div-botton {
+    display: flex;
+    gap: 12px;
+  }
+  .profile {
+    background: #f9fafb;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  .input-div {
+    flex: 1;
+    display: flex;
+    position: relative;
+  }
+  .input-div:focus {
+    border-left: 6px solid #14a800;
+    transition-property: all;
+    transition-duration: 0.2;
+    transition-timing-function: ease-in-out;
+  }
+  .search {
+    position: absolute;
+    left: 18px;
+    top: 44%;
+    transform: translate(-0%, -50%);
+    font-size: 32px;
+  }
+  .div-botton {
+  }
+  .content-header {
+  }
+}

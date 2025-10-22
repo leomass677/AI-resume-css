@@ -7,3 +7,13 @@ fetch("../navbar/navbar.html")
   .catch((er) => {
     console.log("Failed to load");
   });
+
+// Header.js
+fetch("../Header/Header.html")
+  .then((response) => response.text())
+  .then((html) => {
+    document.getElementById("Injecting-header").innerHTML = html;
+  })
+  .catch((er) => {
+    console.log("Failed to load");
+  });

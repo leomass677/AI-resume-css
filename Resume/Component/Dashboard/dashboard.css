@@ -80,8 +80,10 @@ body {
     display: flex;
     flex-direction: row;
   }
-  main {
+  .main-section {
+    display: flex;
     flex: 1;
+    flex-direction: column;
     margin-left: 260px;
   }
 

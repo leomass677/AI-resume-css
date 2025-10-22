@@ -1,0 +1,340 @@
+/* Put this at the very top of your CSS file */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk&display=swap");
+
+/* Default styles (Mobile First) */
+body {
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+.dashboard-container {
+}
+.welcome-section {
+}
+.summary-section {
+}
+.summary-card {
+}
+.summary-header {
+}
+.summary-stats {
+}
+.summary-growth {
+}
+.dashboard-container {
+}
+
+/* Tablet (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .dashboard-container {
+  }
+  .welcome-section {
+  }
+  .summary-section {
+  }
+  .summary-card {
+  }
+  .summary-header {
+  }
+  .summary-stats {
+  }
+  .summary-growth {
+  }
+  .dashboard-container {
+  }
+}
+
+/* Small Desktop (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  .dashboard-container {
+  }
+  .welcome-section {
+  }
+  .summary-section {
+  }
+  .summary-card {
+  }
+  .summary-header {
+  }
+  .summary-stats {
+  }
+  .summary-growth {
+  }
+  .dashboard-container {
+  }
+}
+
+/* Large Desktop (min-width: 1280px) */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 22px;
+    font-family: "Inter", sans-serif;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  main {
+    flex: 1;
+    margin-left: 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 44px;
+    background-color: white;
+  }
+  .main-content {
+  }
+  .resume-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .resume-header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .resume-intro {
+    font-size: 14px;
+    color: #667185;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .resume-title {
+    font-size: 24px;
+    font-family: "Space Grotesk", sans-serif;
+    color: #101928;
+  }
+
+  .resume-description {
+  }
+
+  .resume-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: end;
+  }
+  .btn-save-draft {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: #667185;
+    border: 1.5px solid #667185;
+    border-radius: 8px;
+  }
+  .btn-export {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: white;
+    border: 1.5px solid #667185;
+    border-radius: 8px;
+    background-color: #14a800;
+  }
+  .btn-preview {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: #667185;
+    border: 1.5px solid #667185;
+    border-radius: 8px;
+  }
+  .btn-icon {
+  }
+
+  .resume-progress {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: start;
+  }
+  .step {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .step-divider {
+    transform: rotate(0deg);
+    width: 117px;
+    height: 2px;
+    border: 1px solid #14a800;
+  }
+  .resume-intro {
+    display: flex;
+  }
+  .cycle {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #14a800;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .personal-info-section {
+  }
+  .personal-info-container {
+  }
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 8px 0;
+  }
+  .section-title {
+    font-size: 18px;
+  }
+  .section-description {
+    font-size: 14px;
+    color: #667185;
+  }
+  .input-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .full-width {
+    grid-column: 1/-1;
+  }
+  .input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .professional-summary-section {
+  }
+  .summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .summary-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 16px;
+    padding: 8px 0;
+  }
+  .summary-textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+    padding: 8px 6px;
+    outline: none;
+
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #d0d5dd;
+  }
+  .summary-title {
+  }
+  .summary-description {
+    font-size: 14px;
+    color: #667185;
+  }
+  input {
+    padding: 8px 6px;
+
+    border-radius: 8px;
+    outline: none;
+    border: 1px solid #d0d5dd;
+  }
+  input:focus {
+    border-left: 6px solid #14a800;
+    transition-property: all;
+    transition-duration: 0.2;
+    transition-timing-function: ease-in-out;
+  }
+  textarea:focus {
+    border-left: 6px solid #14a800;
+    transition-property: all;
+    transition-duration: 0.2;
+    transition-timing-function: ease-in-out;
+  }
+  input::placeholder {
+    color: #98a2b3;
+    font-size: 14px;
+  }
+  textarea::placeholder {
+    color: #98a2b3;
+    font-size: 14px;
+  }
+  label {
+    font-size: 14px;
+    color: #101928;
+  }
+  .btn-ai-generate {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: white;
+    border: 1.5px solid #667185;
+    border-radius: 8px;
+    background-color: #14a800;
+    width: fit-content;
+  }
+  .next-button-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .btn-next {
+    display: flex;
+    align-items: center;
+    padding: 18px 16px;
+    color: white;
+    border: 1.5px solid #667185;
+    border-radius: 8px;
+    background-color: #14a800;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+  .btn-next-span {
+  }
+  .tips {
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 600;
+    color: #101928;
+    display: flex;
+    gap: 24px;
+  }
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #98a2b3;
+    padding: 24px 16px;
+    border-radius: 24px;
+    border-left: 4px solid #14a800;
+    font-weight: 500;
+  }
+  .list-items {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+  }
+  .list-items span {
+    width: 10px;
+    height: 10px;
+    background: #14a800;
+    border-radius: 100%;
+  }
+}

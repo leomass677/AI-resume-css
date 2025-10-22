@@ -1,50 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head class="head">
-    <meta charset="UTF-8" class="meta-charset" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-      class="meta-viewport"
-    />
-    <title class="title">Document</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link
       rel="stylesheet"
       href="../navbar/navbar.css"
       class="link-navbar-css"
     />
-    <link rel="stylesheet" href="resumeBuilder.css" class="link-resume-css" />
+    <link rel="stylesheet" href="CoverLetter.css" />
   </head>
   <body class="body">
     <div class="wrapper">
       <div id="navbar-placeholder" class="navbar-placeholder"></div>
       <main class="main-content">
-        <header id="InjectingHeade"></header>
+        <header class="header">Header</header>
 
         <section class="resume-section">
           <!-- Top header and buttons -->
           <div class="resume-header-container">
             <div class="resume-intro">
-              <h3 class="resume-title">Resume Builder</h3>
+              <h3 class="resume-title">Cover Letter Generator</h3>
               <p class="resume-description">
-                Create your professional resume step-by -step
+                Create tailored cover letters with AI assistance.
               </p>
-            </div>
-
-            <!-- Button List -->
-            <div class="resume-buttons">
-              <button class="btn-save-draft">
-                <img src="" alt="" class="btn-icon" />
-                <p class="btn-text">Save draft</p>
-              </button>
-              <button class="btn-preview">
-                <img src="" alt="" class="btn-icon" />
-                <p class="btn-text">Preview</p>
-              </button>
-              <button class="btn-export">
-                <img src="" alt="" class="btn-icon" />
-                <p class="btn-text">Export</p>
-              </button>
             </div>
 
             <!-- Steps Indicator -->
@@ -59,10 +39,6 @@
               </div>
               <div class="step step-3">
                 <div class="cycle">3</div>
-                <hr class="step-divider" />
-              </div>
-              <div class="step step-4">
-                <div class="cycle">4</div>
               </div>
             </div>
           </div>
@@ -72,7 +48,9 @@
             <div class="personal-info-container">
               <div class="section-header">
                 <h3 class="section-title">Personal Information</h3>
-                <p class="section-description">Enter your personal details</p>
+                <p class="section-description">
+                  Basic contact details and links
+                </p>
               </div>
               <div class="input-group">
                 <div class="input-field">
@@ -122,27 +100,27 @@
           <!-- Professional Links -->
           <div class="professional-links-section">
             <div class="section-header">
-              <h3 class="section-title">Professional Links</h3>
+              <h3 class="section-title">Job Informations</h3>
               <p class="section-description">
-                Add your professional online presence
+                Provide details about the position you're applying for
               </p>
             </div>
             <div class="input-group">
               <div class="input-field linkedin">
-                <label for="" class="label">LinkedIn Profile link</label>
+                <label for="" class="label">Job Title</label>
                 <input
                   type="text"
                   required
-                  placeholder="linkedin.com/jondoe"
+                  placeholder="Senior Software Engineer"
                   class="input"
                 />
               </div>
               <div class="input-field twitter">
-                <label for="" class="label">Twitter Profile link</label>
+                <label for="" class="label">Company Name</label>
                 <input
                   type="text"
                   required
-                  placeholder="X.com/john_doe"
+                  placeholder="Malhub Inc"
                   class="input"
                 />
               </div>
@@ -162,10 +140,8 @@
           <div class="professional-summary-section">
             <div class="summary-header">
               <div class="summary-text">
-                <p class="summary-title">Professional Summary</p>
-                <p class="summary-description">
-                  A brief overview of your professional background
-                </p>
+                <p class="summary-title">Job Description</p>
+                
               </div>
               <button class="btn-ai-generate">
                 <img src="" alt="" class="btn-icon" />
@@ -173,20 +149,27 @@
               </button>
             </div>
             <textarea
-              id="Professional-Summary"
+              id="Paste the job description here or upload a file"
               rows="10"
-              placeholder="Placeholder"
+              placeholder="Paste the job description here or upload a file"
               class="summary-textarea"
             ></textarea>
           </div>
+           <div class="tips">
+                <p>Tips:</p>
+                <ul class="list">
+                     <div class="list-items"><span></span><p><ol>Include specific job requirements from the posting</ol></p></div>
+                     <div class="list-items"><span></span><p><ol>Mention the company name and role specifically</ol></p></div>
+                     <div class="list-items"><span></span><p><ol>Highlight relevant experience and achievements</ol></p></div>
+                     <div class="list-items"><span></span><p><ol>Keep it concise and professional</ol></p></div>
+                </ul>
+            </div>
         </section>
 
         <!-- Next Button -->
         <div class="next-button-container">
           <button class="btn-next">
-            <span class="btn-next-span"
-              >Next <img src="" alt="" class="btn-icon"
-            /></span>
+           Generate
           </button>
         </div>
       </main>
