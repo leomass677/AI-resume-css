@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .main-div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fdf0d5;
+      padding: 24px;
+      border-radius: 12px;
+    }
+    .header {
+      color: #003049;
+      text-align: center;
+      font-size: 28px;
+      font-weight: 600;
+    }
+    .button-div {
+      display: flex;
+      gap: 10px;
+    }
+    .button-div > button {
+      background-color: #003049;
+      color: white;
+      padding: 4px 14px;
+      border-radius: 4px;
+      box-shadow: 1px 1px 2px -1px white;
+    }
+    .button-div > button:hover {
+      transform: scale(1.1);
+      transition-duration: 0.4;
+      transition-property: all;
+      transition-timing-function: ease-in-out;
+      transition-delay: 0.1;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <div class="main-div">
+      <h1 class="header">Rock Paper Scissors</h1>
+      <div class="button-div">
+        <div class="button-div">
+          <button onclick="playGame('Rock')">Rock</button>
+          <button onclick="playGame('Paper')">Paper</button>
+          <button onclick="playGame('Scissors')">Scissors</button>
+        </div>
+      </div>
+      <p class="checkState"></p>
+      <p class="pick"></p>
+
+      <button>Reset Score</button>
+    </div>
+
+    <script>
+      function playGame(playerChoice) {
+        const game = ["Rock", "Paper", "Scissors"];
+        const computerChoice = game[Math.floor(Math.random() * game.length)];
+
+        let result;
+        let checkState;
+        result = document.querySelector(
+          ".pick"
+        ).textContent = `You Pick ${playerChoice} and the computer pick  ${computerChoice}`;
+
+        if (
+          (playerChoice === "Rock" && computerChoice === "Scissors") ||
+          (playerChoice === "Paper" && computerChoice === "Rock") ||
+          (playerChoice === "Scissors" && computerChoice === "Paper")
+        ) {
+          document.querySelector(".checkState").textContent = "YOU WIN!";
+        } else if (playerChoice === computerChoice) {
+          document.querySelector(".checkState").textContent = "Tie!";
+        } else {
+          document.querySelector(".checkState").textContent = "YOU Lost!";
+        }
+      }
+    </script>
+  </body>
+</html>

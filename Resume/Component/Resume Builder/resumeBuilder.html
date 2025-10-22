@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="head">
+    <meta charset="UTF-8" class="meta-charset" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+      class="meta-viewport"
+    />
+    <title class="title">Document</title>
+    <link
+      rel="stylesheet"
+      href="../navbar/navbar.css"
+      class="link-navbar-css"
+    />
+    <link rel="stylesheet" href="resumeBuilder.css" class="link-resume-css" />
+  </head>
+  <body class="body">
+    <div class="wrapper">
+      <div id="navbar-placeholder" class="navbar-placeholder"></div>
+      <main class="main-content">
+        <header class="header">Header</header>
+
+        <section class="resume-section">
+          <!-- Top header and buttons -->
+          <div class="resume-header-container">
+            <div class="resume-intro">
+              <h3 class="resume-title">Resume Builder</h3>
+              <p class="resume-description">
+                Create your professional resume step-by -step
+              </p>
+            </div>
+
+            <!-- Button List -->
+            <div class="resume-buttons">
+              <button class="btn-save-draft">
+                <img src="" alt="" class="btn-icon" />
+                <p class="btn-text">Save draft</p>
+              </button>
+              <button class="btn-preview">
+                <img src="" alt="" class="btn-icon" />
+                <p class="btn-text">Preview</p>
+              </button>
+              <button class="btn-export">
+                <img src="" alt="" class="btn-icon" />
+                <p class="btn-text">Export</p>
+              </button>
+            </div>
+
+            <!-- Steps Indicator -->
+            <div class="resume-progress">
+              <div class="step step-1">
+                <div class="cycle">1</div>
+                <hr class="step-divider" />
+              </div>
+              <div class="step step-2">
+                <div class="cycle">2</div>
+                <hr class="step-divider" />
+              </div>
+              <div class="step step-3">
+                <div class="cycle">3</div>
+                <hr class="step-divider" />
+              </div>
+              <div class="step step-4">
+                <div class="cycle">4</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Personal Information -->
+          <div class="personal-info-section">
+            <div class="personal-info-container">
+              <div class="section-header">
+                <h3 class="section-title">Personal Information</h3>
+                <p class="section-description">Enter your personal details</p>
+              </div>
+              <div class="input-group">
+                <div class="input-field">
+                  <label for="" class="label">First name</label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="John"
+                    class="input"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="" class="label">Last name</label>
+                  <input type="text" required placeholder="Doe" class="input" />
+                </div>
+                <div class="input-field">
+                  <label for="" class="label">Phone Number</label>
+                  <input
+                    type="number"
+                    required
+                    placeholder="+2348123456790"
+                    class="input"
+                  />
+                </div>
+                <div class="input-field">
+                  <label for="" class="label">Email</label>
+                  <input
+                    type="email"
+                    required
+                    placeholder="Johndoe@gmail.com"
+                    class="input"
+                  />
+                </div>
+                <div class="input-field full-width">
+                  <label for="" class="label">House address</label>
+                  <input
+                    type="text"
+                    required
+                    placeholder="San Francisco. CA"
+                    class="input"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Links -->
+          <div class="professional-links-section">
+            <div class="section-header">
+              <h3 class="section-title">Professional Links</h3>
+              <p class="section-description">
+                Add your professional online presence
+              </p>
+            </div>
+            <div class="input-group">
+              <div class="input-field linkedin">
+                <label for="" class="label">LinkedIn Profile link</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="linkedin.com/jondoe"
+                  class="input"
+                />
+              </div>
+              <div class="input-field twitter">
+                <label for="" class="label">Twitter Profile link</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="X.com/john_doe"
+                  class="input"
+                />
+              </div>
+              <div class="input-field portfolio full-width">
+                <label for="" class="label">Portfolio link</label>
+                <input
+                  type="text"
+                  required
+                  placeholder="www.johndoe.com"
+                  class="input"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Professional Summary -->
+          <div class="professional-summary-section">
+            <div class="summary-header">
+              <div class="summary-text">
+                <p class="summary-title">Professional Summary</p>
+                <p class="summary-description">
+                  A brief overview of your professional background
+                </p>
+              </div>
+              <button class="btn-ai-generate">
+                <img src="" alt="" class="btn-icon" />
+                <p class="btn-text">AI generate</p>
+              </button>
+            </div>
+            <textarea
+              id="Professional-Summary"
+              rows="10"
+              placeholder="Placeholder"
+              class="summary-textarea"
+            ></textarea>
+          </div>
+        </section>
+
+        <!-- Next Button -->
+        <div class="next-button-container">
+          <button class="btn-next">
+            <span class="btn-next-span"
+              >Next <img src="" alt="" class="btn-icon"
+            /></span>
+          </button>
+        </div>
+      </main>
+    </div>
+
+    <script src="../Dashboard/dashboard.js" class="script-dashboard"></script>
+  </body>
+</html>

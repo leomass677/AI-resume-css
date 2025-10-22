@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning js</title>
+  </head>
+  <style>
+    button {
+      padding: 8px 14px;
+      background-color: #669bbc;
+      font-weight: 600;
+      font-size: 18px;
+      border: none;
+      box-shadow: 0 2px red;
+      border-radius: 8px;
+      color: #dad7cd;
+    }
+    button:hover {
+      box-shadow: 0 1px;
+      transition: all;
+      transition-property: all;
+      transition-timing-function: 0.2s;
+      transition-timing-function: ease-in-out;
+      transform: scale(105%);
+    }
+  </style>
+  <body>
+    <div>
+      <h3>Youtube</h3>
+      <p>Click the button to Subscribe</p>
+      <button onclick="handleButtonClick()">Subscribe</button>
+    </div>
+    <script>
+      const buttonText = document.querySelector("button");
+      const ClickedMassage = document.querySelector("p");
+      function handleButtonClick() {
+        if (buttonText.innerHTML === "Subscribe") {
+          ClickedMassage.innerText = "You Have subscribe";
+          buttonText.innerHTML = "Unubscribe";
+
+          buttonText.style.backgroundColor = "#c1121f";
+        } else {
+          ClickedMassage.innerText = "Click the button to Subscribe";
+          buttonText.innerHTML = "Subscribe";
+          buttonText.style.backgroundColor = "#588157";
+        }
+      }
+    </script>
+  </body>
+</html>
