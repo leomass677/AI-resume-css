@@ -37,6 +37,9 @@ body {
   padding-left: 0;
   flex-grow: 1;
 }
+.a {
+  text-decoration: none;
+}
 
 .nav-items {
   display: flex;
@@ -62,6 +65,9 @@ body {
   width: 20px;
   height: 20px;
   margin-right: 12px;
+}
+.setting a {
+  text-decoration: none;
 }
 
 .nav-items a {
