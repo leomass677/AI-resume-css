@@ -6,16 +6,67 @@ body {
   font-size: 16px;
   background-color: #f0f0f0;
 }
+.dashboard-container {
+}
+.welcome-section {
+}
+.summary-section {
+}
+.summary-card {
+}
+.summary-header {
+}
+.summary-stats {
+}
+.summary-growth {
+}
+.dashboard-container {
+}
 
 /* Tablet (min-width: 768px) */
 @media screen and (min-width: 768px) {
   body {
     font-size: 18px;
   }
+  .dashboard-container {
+  }
+  .welcome-section {
+  }
+  .summary-section {
+  }
+  .summary-card {
+  }
+  .summary-header {
+  }
+  .summary-stats {
+  }
+  .summary-growth {
+  }
+  .dashboard-container {
+  }
 }
 
 /* Small Desktop (min-width: 1024px) */
 @media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  .dashboard-container {
+  }
+  .welcome-section {
+  }
+  .summary-section {
+  }
+  .summary-card {
+  }
+  .summary-header {
+  }
+  .summary-stats {
+  }
+  .summary-growth {
+  }
+  .dashboard-container {
+  }
 }
 
 /* Large Desktop (min-width: 1280px) */
@@ -26,8 +77,10 @@ body {
   }
 
   .wrapper {
+    display: flex;
+    flex-direction: row;
   }
-  .main-section {
+  .dashboard-container {
     display: flex;
     flex: 1;
     flex-direction: column;

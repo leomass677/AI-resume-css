@@ -9,77 +9,81 @@
     <link rel="stylesheet" href="../Header/Header.css" />
     <link rel="stylesheet" href="profile.css" />
   </head>
-  <body>
+
+  <body class="resume-dashboard">
     <!-- Navbar Header -->
-    <div class="wrapper">
-      <div id="navbar-placeholder"></div>
-      <section class="main-section">
+    <section id="main-section" class="main-section">
+      <div id="navbar-placeholder" class="navbar-placeholder"></div>
+
+      <main id="dashboard-container" class="dashboard-container">
         <header id="Injecting-header" class="content-header"></header>
-        <main class="dashboard-container">
+        <div class="main-section-h">
           <!-- My Profile -->
-          <section class="welcome-section">
-            <h1>My Profile</h1>
+          <section id="welcome-section" class="welcome-section">
+            <h1 id="profile-title">My Profile</h1>
           </section>
 
-          <section class="header-section">
-            <div>
-              <img src="" alt="" />
+          <!-- Header Section -->
+          <section id="header-section" class="header-section">
+            <div class="profile-image-container">
+              <img
+                id="profile-image"
+                src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=774"
+                alt="Profile Picture"
+              />
+              <div class="profile-cycle"><span>📷</span></div>
             </div>
-            <div>
-              <h5>John Doe</h5>
-              <p>User</p>
-              <p>Leed, United Kingdom</p>
+            <div class="profile-info">
+              <h5 id="profile-name">John Doe</h5>
+              <p id="profile-role">User</p>
+              <p id="profile-location">Leeds, United Kingdom</p>
             </div>
           </section>
 
           <!-- Personal Information -->
-          <section>
-            <div>
-              <h5>Personal Information</h5>
-              <button>Edit</button>
+          <section id="personal-info-section" class="info-section">
+            <div class="section-header">
+              <div class="header-hr">
+                <h5 id="personal-info-title">Personal Information</h5>
+
+                <button id="edit-personal-info" class="edit-btn">Edit</button>
+              </div>
               <hr />
             </div>
-            <!-- grid div -->
-            <div>
-              <!-- Last Name -->
-              <div>
+
+            <div class="info-grid" id="personal-info-grid">
+              <div class="info-item" id="last-name">
                 <p><strong>Last Name</strong></p>
                 <p>Doe</p>
               </div>
 
-              <!-- First Name -->
-              <div>
+              <div class="info-item" id="first-name">
                 <p><strong>First Name</strong></p>
                 <p>John</p>
               </div>
 
-              <!-- Date of Birth -->
-              <div>
+              <div class="info-item" id="dob">
                 <p><strong>Date of Birth</strong></p>
                 <p>12-10-2003</p>
               </div>
 
-              <!-- Phone number -->
-              <div>
-                <p><strong>Phone number</strong></p>
+              <div class="info-item" id="phone">
+                <p><strong>Phone Number</strong></p>
                 <p>+1 (555) 123-4567</p>
               </div>
 
-              <!-- Email -->
-              <div>
+              <div class="info-item" id="email">
                 <p><strong>Email</strong></p>
                 <p>john.doe@example.com</p>
               </div>
 
-              <!-- User Role -->
-              <div>
+              <div class="info-item" id="user-role">
                 <p><strong>User Role</strong></p>
                 <p>User</p>
               </div>
 
-              <!-- Professional Bio  flex: 1/-1 -->
-              <div>
-                <p><strong>Professional Bio </strong></p>
+              <div class="info-item" id="bio">
+                <p><strong>Professional Bio</strong></p>
                 <p>
                   Experienced software engineer passionate about building
                   scalable web applications and leading high-performing teams.
@@ -89,46 +93,43 @@
           </section>
 
           <!-- Address -->
-          <section>
-            <div>
-              <h5>Address</h5>
-              <button>Edit</button>
+          <section id="address-section" class="info-section">
+            <div class="section-header">
+              <div class="header-hr">
+                <h5 id="address-title">Address</h5>
+
+                <button id="edit-address" class="edit-btn">Edit</button>
+              </div>
               <hr />
             </div>
-            <!-- grid div -->
-            <div>
-              <!-- Country -->
-              <div>
+
+            <div class="info-grid" id="address-grid">
+              <div class="info-item" id="country">
                 <p><strong>Country</strong></p>
                 <p>United Kingdom</p>
               </div>
 
-              <!-- City -->
-              <div>
+              <div class="info-item" id="city">
                 <p><strong>City</strong></p>
-                <p>Leed, East London</p>
+                <p>Leeds, East London</p>
               </div>
 
-              <!-- Portal code -->
-              <div>
-                <p><strong>Portal code</strong></p>
+              <div class="info-item" id="postal-code">
+                <p><strong>Postal Code</strong></p>
                 <p>ERT, 1254</p>
               </div>
 
-              <!-- State -->
-              <div>
+              <div class="info-item" id="state">
                 <p><strong>State</strong></p>
                 <p>England</p>
               </div>
 
-              <!-- Address Line 1 -->
-              <div>
+              <div class="info-item" id="address-line-1">
                 <p><strong>Address Line 1</strong></p>
                 <p>1254 ERT Street</p>
               </div>
 
-              <!-- Address Line 2 -->
-              <div>
+              <div class="info-item" id="address-line-2">
                 <p><strong>Address Line 2</strong></p>
                 <p>East London</p>
               </div>
@@ -136,22 +137,22 @@
           </section>
 
           <!-- Links -->
-          <section>
-            <div>
-              <h5>Address</h5>
-              <button>Edit</button>
+          <section id="links-section" class="info-section">
+            <div class="section-header">
+              <div class="header-hr">
+                <h5 id="links-title">Links</h5>
+                <button id="edit-links" class="edit-btn">Edit</button>
+              </div>
               <hr />
             </div>
-            <!-- grid div -->
-            <div>
-              <!-- LinkedIn -->
-              <div>
+
+            <div class="info-grid" id="links-grid">
+              <div class="info-item" id="linkedin">
                 <p><strong>LinkedIn</strong></p>
                 <p>https://linkedin.com/in/johndoe</p>
               </div>
 
-              <!-- Website/Portfolio -->
-              <div>
+              <div class="info-item" id="portfolio">
                 <p><strong>Website/Portfolio</strong></p>
                 <p>https://johndoe.dev</p>
               </div>
@@ -159,48 +160,49 @@
           </section>
 
           <!-- Subscription -->
-          <section>
-            <div>
-              <h5>Subscription</h5>
-              <button>Edit</button>
+          <section id="subscription-section" class="info-section">
+            <div class="section-header">
+              <div class="header-hr">
+                <h5 id="subscription-title">Subscription</h5>
+                <button id="edit-subscription" class="edit-btn">Edit</button>
+              </div>
               <hr />
             </div>
-            <!-- grid div -->
-            <div>
-              <!-- list of items -->
-              <p>Current Plan</p>
-              <ul>
+
+            <div class="subscription-content" id="subscription-content">
+              <p id="current-plan-title">Current Plan</p>
+              <ul id="plan-list">
                 <li><span></span>3 resume downloads per month</li>
-                <li><span></span> Basic templates</li>
-                <li><span></span> Standard support</li>
+                <li><span></span>Basic templates</li>
+                <li><span></span>Standard support</li>
               </ul>
-              <!-- full container button -->
-              <button><span></span>Upgrade</button>
+              <button id="upgrade-btn" class="upgrade-btn">
+                <span></span>Upgrade
+              </button>
             </div>
           </section>
 
-          <!-- Subscription -->
-          <section>
-            <div>
-              <h5>Account Statistics</h5>
+          <!-- Account Statistics -->
+          <section id="account-stats-section" class="info-section">
+            <div class="section-header">
+              <div class="header-hr">
+                <h5 id="stats-title">Account Statistics</h5>
+              </div>
               <hr />
             </div>
-            <!-- flex-->
-            <div>
+
+            <div class="stats-list" id="stats-list">
               <ul>
-                <li>
+                <li id="docs-created">
                   <p><span></span>Documents Created</p>
-                  <!-- justify btw -->
                   <p>14</p>
                 </li>
-                <li>
+                <li id="downloads">
                   <p><span></span>Downloads</p>
-                  <!-- justify btw -->
                   <p>48</p>
                 </li>
-                <li>
+                <li id="member-since">
                   <p><span></span>Member Since</p>
-                  <!-- justify btw -->
                   <p>Jan 2024</p>
                 </li>
               </ul>
@@ -208,23 +210,25 @@
           </section>
 
           <!-- Quick Actions -->
-          <section>
-            <div>
-              <h5>Account Statistics</h5>
+          <section id="quick-actions-section" class="info-section">
+            <div class="section-header">
+              <div class="header-hr">
+                <h5 id="quick-actions-title">Quick Actions</h5>
+              </div>
               <hr />
             </div>
-            <!-- flex div -->
-            <div>
-              <buttom>Account Settings</buttom>
-              <buttom>View Pricing</buttom>
-              <button>Download Data</button>
+
+            <div class="actions-container" id="actions-container">
+              <button id="account-settings-btn">Account Settings</button>
+              <button id="view-pricing-btn">View Pricing</button>
+              <button id="download-data-btn">Download Data</button>
             </div>
           </section>
-        </main>
-      </section>
-    </div>
+        </div>
+      </main>
+    </section>
 
-    <!-- JavaScript->navbar -->
-    <script src="dashboard.js"></script>
+    <!-- JavaScript Navbar -->
+    <script src="../Dashboard/dashboard.js"></script>
   </body>
 </html>

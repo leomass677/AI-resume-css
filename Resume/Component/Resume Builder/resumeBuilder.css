@@ -87,9 +87,12 @@ main {
     flex-direction: row;
   }
   main {
+    display: flex;
     flex: 1;
+    flex-direction: column;
     margin-left: 260px;
   }
+
   .main-content {
   }
   .resume-section {

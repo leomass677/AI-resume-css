@@ -1,1 +1,243 @@
- 
+/* Put this at the very top of your CSS file */
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk&display=swap");
+
+/* Default styles (Mobile First) */
+body {
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+.dashboard-container {
+}
+.welcome-section {
+}
+.summary-section {
+}
+.summary-card {
+}
+.summary-header {
+}
+.summary-stats {
+}
+.summary-growth {
+}
+.dashboard-container {
+}
+
+/* Tablet (min-width: 768px) */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  .dashboard-container {
+  }
+  .welcome-section {
+  }
+  .summary-section {
+  }
+  .summary-card {
+  }
+  .summary-header {
+  }
+  .summary-stats {
+  }
+  .summary-growth {
+  }
+  .dashboard-container {
+  }
+}
+
+/* Small Desktop (min-width: 1024px) */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  .dashboard-container {
+  }
+  .welcome-section {
+  }
+  .summary-section {
+  }
+  .summary-card {
+  }
+  .summary-header {
+  }
+  .summary-stats {
+  }
+  .summary-growth {
+  }
+  .dashboard-container {
+  }
+}
+
+/* Large Desktop (min-width: 1280px) */
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    color: #344054;
+  }
+  button {
+    cursor: pointer;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .dashboard-container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin-left: 260px;
+  }
+  .main-section-h {
+    padding: 24px 44px;
+    display: flex;
+    gap: 29px;
+    flex-direction: column;
+  }
+  #profile-title {
+    font-size: 24px;
+  }
+  #profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+  }
+  .profile-image-container {
+    position: relative;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+    border: 2px solid white;
+  }
+  .profile-cycle {
+    background-color: white;
+    position: absolute;
+    bottom: 4px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #f0f0f0;
+  }
+  .profile-cycle span {
+    font-size: 14px;
+  }
+  .header-section {
+    display: flex;
+    gap: 29px;
+    padding: 44px 24px;
+    background-color: white;
+    border: 2px solid #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    align-items: center;
+  }
+
+  .info-section {
+    display: flex;
+    gap: 29px;
+    flex-direction: column;
+    padding: 44px 24px;
+    background-color: white;
+    border: 2px solid #f9fafb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+  .section-header {
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  #bio {
+    grid-column: span 2;
+  }
+  .actions-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    padding: 8px 0;
+    gap: 15px;
+  }
+  .actions-container button {
+    display: flex;
+    justify-content: start;
+    text-align: start;
+    padding: 8px 24px;
+    border-radius: 8px;
+    gap: 15px;
+    border: 2px solid #d0d5dd;
+    background-color: white;
+  }
+  #quick-actions-title {
+  }
+  .stats-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  #plan-list li {
+    display: flex;
+  }
+  .stats-list ul li {
+    display: flex;
+    justify-content: space-between;
+  }
+  .subscription-section {
+  }
+  .subscription-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .upgrade-btn {
+    padding: 24px;
+    background-color: #14a800;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+  }
+  .header-hr {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-hr h5 {
+    font-size: 18px;
+  }
+  .subscription-content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .section-header {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .edit-btn {
+    display: flex;
+    align-items: center;
+    padding: 8px 16px;
+    color: white;
+    border: 1.5px solid #667185;
+    border-radius: 8px;
+    background-color: #14a800;
+  }
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
