@@ -156,3 +156,24 @@ body {
   transition-timing-function: ease-in;
   cursor: pointer;
 }
+
+/*  */
+/* Responsive Sidebar: Hide on small screens */
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+
+  .main-header {
+    display: none;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+
+  .main-section {
+    margin-left: 0 !important;
+    padding: 16px;
+  }
+}

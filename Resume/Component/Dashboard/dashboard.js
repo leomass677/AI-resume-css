@@ -18,3 +18,12 @@ fetch("../Header/Header.html")
     console.log("Failed to load");
   });
 //
+fetch("../Header/ResponsiveSidebar")
+  .then((response) => response.text())
+  .then((html) => {
+    document.getElementById("ResponsiveSidebar").innerHTML = html;
+  })
+  .catch((er) => {
+    console.log("Failed to load");
+  });
+//

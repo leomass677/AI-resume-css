@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        /* Mobile Navbar */
+        .mobile-navbar {
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #e0e0e0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+
+        .hamburger {
+            font-size: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .mobile-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Sidebar */
+        .navbar {
+            width: 260px;
+            height: 100vh;
+            background-color: #ffffff;
+            border-right: 1px solid #e0e0e0;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            justify-content: space-between;
+            z-index: 999;
+        }
+
+        .main-header {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .logo {
+            width: 140px;
+            margin-bottom: 30px;
+        }
+
+        .nav-item {
+            list-style: none;
+            padding-left: 0;
+            flex-grow: 1;
+        }
+
+        .nav-items {
+            display: flex;
+            align-items: center;
+            padding: 12px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .nav-items:hover {
+            background-color: #dcf2d9;
+        }
+
+        .nav-items:active {
+            background-color: #b6e4b0;
+        }
+
+        .nav-items img {
+            width: 20px;
+            height: 20px;
+            margin-right: 12px;
+        }
+
+        .nav-items a {
+            text-decoration: none;
+            color: #333;
+            font-size: 15px;
+        }
+
+        .setting a {
+            text-decoration: none;
+        }
+
+        .last-item {
+            margin-top: auto;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 20px;
+        }
+
+        .last-item>div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            gap: 10px;
+            padding: 12px 16px;
+            border-radius: 6px;
+        }
+
+        .last-item>div:hover {
+            background-color: #f4f6f8;
+            cursor: pointer;
+        }
+
+        .last-item img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        .last-item p {
+            font-size: 14px;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .last-item p span:first-child {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .last-item p span:last-child {
+            font-size: 12px;
+            color: #777;
+        }
+
+        .setting {
+            outline: none;
+            display: flex;
+            padding: 12px 10px;
+            width: 100%;
+            margin-bottom: 14px;
+            border: none;
+            border-radius: 4px;
+            background-color: #f7f9fc;
+            color: #101928;
+            align-items: center;
+        }
+
+        .setting:hover {
+            background-color: #dcf2d9;
+            cursor: pointer;
+        }
+
+        /* Responsive */
+        @media screen and (max-width: 767px) {
+            .mobile-navbar {
+                display: flex;
+            }
+
+            .navbar {
+                display: none;
+                position: fixed;
+                top: 56px;
+                left: 0;
+                width: 260px;
+                height: calc(100vh - 56px);
+                background-color: #ffffff;
+                box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .navbar.active {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mobile Navbar -->
+    <div class="mobile-navbar">
+        <button class="hamburger" id="hamburger-toggle">☰</button>
+        <h2 class="mobile-title">ResuMagic</h2>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="navbar" id="sidebar">
+        <div class="main-header">
+            <div class="top-div">
+                <img src="../../icons/logo.svg" alt="Logo" class="logo" />
+                <ul class="nav-item">
+                    <li class="nav-items">
+                        <img src="../../icons/message.svg" alt="Dashboard Icon" />
+                        <a href="../Dashboard/dashboard.html">Dashboard</a>
+                    </li>
+                    <li class="nav-items">
+                        <img src="../../icons/message.svg" alt="Resume Builder Icon" />
+                        <a href="../Resume Builder/resumeBuilder.html">Resume Builder</a>
+                    </li>
+                    <li class="nav-items">
+                        <img src="../../icons/message.svg" alt="Cover Letter Icon" />
+                        <a href="../../Component/Cover Letter/CoverLetter.html">Cover Letter</a>
+                    </li>
+                    <li class="nav-items">
+                        <img src="../../icons/message.svg" alt="Templates Icon" />
+                        <a href="#">Templates</a>
+                    </li>
+                    <li class="nav-items">
+                        <img src="../../icons/message.svg" alt="My Account Icon" />
+                        <a href="../Profile/profile.html">My Account</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="last-item">
+                <button class="setting">
+                    <img src="../../icons/settings.svg" alt="Settings Icon" />
+                    <a href="../Settings/Settings.html">Settings</a>
+                </button>
+                <div>
+                    <img src="../../icons/user-circle.svg" alt="User Icon" />
+                    <p class="user">
+                        <span>David Fayemi</span>
+                        <span>David@gmail.com</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const hamburger = document.getElementById("hamburger-toggle");
+        const sidebar = document.getElementById("sidebar");
+
+        hamburger.addEventListener("click", () => {
+            sidebar.classList.toggle("active");
+        });
+    </script>
+</body>
+
+</html>
